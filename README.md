@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bifurcateIndices from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-bifurcate-indices@deno/mod.js';
+import bifurcateIndices from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-bifurcate-indices@v0.2.3-deno/mod.js';
 ```
 
 #### bifurcateIndices( x, filter )
@@ -94,7 +94,7 @@ var out = bifurcateIndices( x, filter );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import take from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-take-indexed@deno/mod.js';
-import bifurcateIndices from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-bifurcate-indices@deno/mod.js';
+import bifurcateIndices from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-bifurcate-indices@v0.2.3-deno/mod.js';
 
 // Define an initial array of values:
 var values = [ 'beep', 'boop', 'foo', 'bar', 'woot', 'woot' ];
