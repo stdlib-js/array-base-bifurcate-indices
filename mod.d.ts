@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,28 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Split array element indices into two groups.
+* Splits array element indices into two groups.
 *
-* @module @stdlib/array-base-bifurcate-indices
+* @param x - input array
+* @param filter - array indicating which group an element in the input array belongs to
+* @returns results
 *
 * @example
-* var bifurcateIndices = require( '@stdlib/array-base-bifurcate-indices' );
-*
 * var x = [ 'beep', 'boop', 'foo', 'bar' ];
 * var filter = [ true, true, false, true ];
 *
-* var out = bifurcateIndices( x, filter );
+* var out = bifurcateIndices( arr, filter );
 * // returns [ [ 0, 1, 3 ], [ 2 ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function bifurcateIndices( x: Collection | AccessorArrayLike<any>, filter: Collection | AccessorArrayLike<any> ): [ Array<number>, Array<number> ]; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 
 // EXPORTS //
 
-module.exports = main;
+export = bifurcateIndices;
