@@ -1,4 +1,4 @@
-"use strict";var g=function(a,e){return function(){return e||a((e={exports:{}}).exports,e),e.exports}};var v=g(function(l,i){"use strict";var h=require("@stdlib/array-base-resolve-getter");function o(a,e){var s,t,n,u,r;if(t=a.length,e.length!==t)throw new RangeError("invalid argument. The first and second arguments must have the same length.");if(t===0)return[];for(s=h(e),n=[[],[]],r=0;r<t;r++)u=s(e,r),u?n[0].push(r):n[1].push(r);return n}i.exports=o});var c=v();module.exports=c;
+"use strict";var g=function(s,e){return function(){try{return e||s((e={exports:{}}).exports,e),e.exports}catch(t){throw e=0,t}}};var v=g(function(l,i){"use strict";var h=require("@stdlib/array-base-resolve-getter");function o(s,e){var t,n,a,u,r;if(n=s.length,e.length!==n)throw new RangeError("invalid argument. The first and second arguments must have the same length.");if(n===0)return[];for(t=h(e),a=[[],[]],r=0;r<n;r++)u=t(e,r),u?a[0].push(r):a[1].push(r);return a}i.exports=o});var c=v();module.exports=c;
 /**
 * @license Apache-2.0
 *
